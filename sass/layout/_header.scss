@@ -3,7 +3,7 @@
 
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.521), rgba(0, 0, 0, 0.507)),
-    url("../../dist/resources/img/hero_big.jpg");
+    url("../resources/img/hero_big.jpg");
   background-size: cover;
   background-position: center;
 
@@ -13,7 +13,7 @@
         rgba(0, 0, 0, 0.521),
         rgba(0, 0, 0, 0.507)
       ),
-      url("../../dist/resources/img/hero_big_small.jpg");
+      url("../resources/img/hero_big_small.jpg");
   }
 
   @include respond(phone) {

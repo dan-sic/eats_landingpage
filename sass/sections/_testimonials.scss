@@ -1,5 +1,5 @@
 .testimonials {
-  background-image: url("../../dist/resources/img/testimonials_background.jpg");
+  background-image: url("../resources/img/testimonials_background.jpg");
   background-size: cover;
   background-position: top;
   height: 70rem;
@@ -9,7 +9,7 @@
 
   @include respond(tab-port) {
     padding-bottom: $padding-bottom-md;
-    background-image: url("../../dist/resources/img/testimonials_background_small.jpg");
+    background-image: url("../resources/img/testimonials_background_small.jpg");
   }
 
   @include respond(phone) {
