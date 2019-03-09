@@ -271,7 +271,7 @@ body {
   display: grid;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [main-start] repeat(12, [col-start] minmax(min-content, 9.3rem) [col-end]) [main-end] minmax(6rem, 1fr) [full-end];
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.521), rgba(0, 0, 0, 0.507)), url("../../dist/resources/img/hero_big.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.521), rgba(0, 0, 0, 0.507)), url("../resources/img/hero_big.jpg");
   background-size: cover;
   background-position: center; }
   @media only screen and (max-width: 37.5em) {
@@ -280,7 +280,7 @@ body {
   @media only screen and (max-width: 56.25em) {
     .header {
       height: 80vh;
-      background-image: linear-gradient(rgba(0, 0, 0, 0.521), rgba(0, 0, 0, 0.507)), url("../../dist/resources/img/hero_big_small.jpg"); } }
+      background-image: linear-gradient(rgba(0, 0, 0, 0.521), rgba(0, 0, 0, 0.507)), url("../resources/img/hero_big_small.jpg"); } }
   @media only screen and (max-width: 37.5em) {
     .header {
       height: 70vh; } }
@@ -1027,7 +1027,7 @@ body {
     color: #ffd581; }
 
 .testimonials {
-  background-image: url("../../dist/resources/img/testimonials_background.jpg");
+  background-image: url("../resources/img/testimonials_background.jpg");
   background-size: cover;
   background-position: top;
   height: 70rem;
@@ -1037,7 +1037,7 @@ body {
   @media only screen and (max-width: 56.25em) {
     .testimonials {
       padding-bottom: 9rem;
-      background-image: url("../../dist/resources/img/testimonials_background_small.jpg"); } }
+      background-image: url("../resources/img/testimonials_background_small.jpg"); } }
   @media only screen and (max-width: 37.5em) {
     .testimonials {
       padding-bottom: 3rem; } }
