@@ -1,0 +1,39 @@
+.social-links {
+  margin-bottom: 2rem;
+
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    display: inline-block;
+    padding: 1.2rem 1.5rem;
+    border-radius: 50rem;
+    background-color: $color-grey-dark-2;
+
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+
+  &__link:hover,
+  &__link:active {
+    outline: none;
+  }
+
+  &__icon {
+    color: $color-grey-dark-3;
+    font-size: 3rem;
+    transition: all 0.2s;
+
+    &--fb:hover {
+      color: rgb(96, 22, 214);
+    }
+
+    &--inst:hover {
+      color: rgb(156, 26, 145);
+    }
+
+    &--google:hover {
+      color: rgb(17, 129, 32);
+    }
+  }
+}

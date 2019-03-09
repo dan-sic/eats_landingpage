@@ -1,0 +1,157 @@
+.modal {
+  position: absolute;
+  top: 5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  z-index: 10001;
+  width: 100%;
+  max-width: 80rem;
+  padding-bottom: 3rem;
+  border-radius: 5px;
+  display: none;
+
+  @include respond(phone) {
+    width: 50rem;
+  }
+
+  @include respond(small-phone) {
+    width: 40rem;
+  }
+
+  &__img {
+    display: block;
+    height: 22rem;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__heading {
+    margin-left: 3rem;
+  }
+
+  &__close {
+    position: absolute;
+    top: 19%;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    color: $color-grey-dark-3;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    @include respond(phone) {
+      top: 17%;
+    }
+
+    &:hover {
+      transform: scale(1.2);
+      color: black;
+    }
+  }
+
+  &__form {
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(30rem, 1fr));
+    grid-column-gap: 3rem;
+
+    @include respond(phone) {
+      grid-template-columns: repeat(2, minmax(15rem, 1fr));
+    }
+
+    @include respond(small-phone) {
+      grid-template-columns: repeat(2, minmax(10rem, 1fr));
+    }
+  }
+
+  &__form-group {
+    &--first-name {
+      grid-column: 1/2;
+
+      @include respond(phone) {
+        grid-column: 1/3;
+      }
+    }
+
+    &--last-name {
+      grid-column: 2/3;
+
+      @include respond(phone) {
+        grid-column: 1/3;
+      }
+    }
+
+    &--email {
+      grid-column: 1/3;
+    }
+    &--people-number {
+      grid-column: 1/2;
+
+      @include respond(phone) {
+        grid-column: 1/3;
+      }
+    }
+
+    &--phone {
+      @include respond(phone) {
+        grid-column: 1/3;
+      }
+    }
+
+    &--date {
+      grid-column: 1/2;
+
+      @include respond(phone) {
+        grid-column: 1/3;
+      }
+    }
+    &--time {
+      grid-column: 2/3;
+
+      @include respond(phone) {
+        grid-column: 1/3;
+      }
+    }
+    &--message {
+      grid-column: 1/3;
+    }
+  }
+
+  &__submit {
+    grid-column: 1/3;
+  }
+
+  &--active {
+    display: block;
+    animation: modalSlideIn 1s ease-in-out;
+    animation-fill-mode: both;
+  }
+
+  &--hidden {
+    animation: modalSlideOut 1s ease-in-out;
+    animation-fill-mode: both;
+    display: block;
+  }
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.664);
+  z-index: 10000;
+
+  &--active {
+    animation: modalOverlayFadeIn 1s linear;
+    animation-fill-mode: forwards;
+  }
+
+  &--hidden {
+    animation: modalOverlayFadeOut 1s linear;
+    animation-fill-mode: forwards;
+  }
+}

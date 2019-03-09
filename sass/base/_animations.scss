@@ -1,0 +1,211 @@
+@keyframes fadeInFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem);
+  }
+
+  80% {
+    transform: translateY(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes carouselFadeInFromRight {
+  0% {
+    opacity: 0;
+    left: 70%;
+  }
+
+  100% {
+    opacity: 1;
+    left: 50%;
+  }
+}
+
+@keyframes carouselFadeInFromLeft {
+  0% {
+    opacity: 0;
+    left: 30%;
+  }
+
+  100% {
+    opacity: 1;
+    left: 50%;
+  }
+}
+
+@keyframes carouselFadeOutToLeft {
+  0% {
+    display: flex;
+    opacity: 1;
+    left: 50%;
+  }
+
+  100% {
+    opacity: 0;
+    left: 30%;
+    display: none;
+  }
+}
+
+@keyframes carouselFadeOutToRight {
+  0% {
+    display: flex;
+    opacity: 1;
+    left: 50%;
+  }
+
+  100% {
+    opacity: 0;
+    left: 70%;
+    display: none;
+  }
+}
+
+@keyframes modalSlideIn {
+  0% {
+    // display: block;
+    top: -5rem;
+    opacity: 0;
+  }
+
+  80% {
+    top: 7rem;
+  }
+
+  100% {
+    top: 5rem;
+    opacity: 1;
+    // display: block;
+  }
+}
+
+@keyframes modalSlideOut {
+  0% {
+    // display: block;
+    top: 5rem;
+    opacity: 1;
+  }
+
+  20% {
+    top: 7rem;
+  }
+
+  99% {
+    // display: block;
+    top: -5rem;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  100% {
+    top: -500rem;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes modalOverlayFadeIn {
+  0% {
+    left: 0;
+    opacity: 0;
+  }
+
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes modalOverlayFadeOut {
+  0% {
+    left: 0%;
+    opacity: 1;
+  }
+
+  99% {
+    left: 0%;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    left: -100%;
+  }
+}
+
+@keyframes navbarSlideIn {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  80% {
+    transform: translateY(10%);
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes navbarSlideOut {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  20% {
+    transform: translateY(10%);
+  }
+
+  99% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(-200%);
+    opacity: 0;
+    visibility: hidden;
+  }
+}

@@ -1,0 +1,58 @@
+.row {
+  max-width: 112rem;
+  margin: 0 auto;
+}
+
+.about {
+  @include grid-column-setup;
+  grid-template-rows: max-content;
+  padding-top: $padding-top-md;
+  padding-bottom: $padding-bottom-md;
+  background-color: $color-grey-light-2;
+  align-content: start;
+
+  @include respond(tab-port) {
+    grid-row-gap: 5rem;
+  }
+
+  @include respond(phone) {
+    padding-top: $padding-top-sm;
+    padding-bottom: $padding-bottom-sm;
+  }
+
+  &__text-box {
+    grid-column: main-start / col-end 5;
+    align-self: center;
+
+    @include respond(tab-port) {
+      grid-column: main-start / main-end;
+    }
+  }
+
+  &__img-box {
+    grid-column: col-start 7 / main-end;
+    border-radius: 3px;
+    overflow: hidden;
+
+    @include respond(tab-port) {
+      grid-column: main-start / main-end;
+    }
+
+    & figure {
+      height: 100%;
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+
+    &--visible {
+      animation: fadeInFromRight 1s ease-out;
+      animation-fill-mode: forwards;
+    }
+  }
+}

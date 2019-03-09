@@ -1,0 +1,32 @@
+.features {
+  @include grid-column-setup;
+
+  padding-top: $padding-top-md;
+  padding-bottom: $padding-bottom-md;
+
+  @include respond(phone) {
+    padding-top: $padding-top-sm;
+    padding-bottom: $padding-bottom-sm;
+  }
+
+  &__head {
+    grid-column: main-start / main-end;
+    justify-self: center;
+  }
+
+  &__showcase {
+    grid-column: main-start / main-end;
+    grid-row: 2;
+
+    margin-top: 5rem;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    grid-gap: 4.5rem;
+  }
+
+  &__icon {
+    font-size: 4.5rem;
+    color: $color-primary;
+  }
+}

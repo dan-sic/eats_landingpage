@@ -1,0 +1,23 @@
+.breaker {
+  background-color: $color-black;
+  height: 45rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include respond(tab-port) {
+    height: 35rem;
+  }
+
+  @include respond(phone) {
+    padding: 0 3rem;
+  }
+
+  &__display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 5;
+  }
+}

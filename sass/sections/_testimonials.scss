@@ -1,0 +1,168 @@
+.testimonials {
+  background-image: url("../../dist/resources/img/testimonials_background.jpg");
+  background-size: cover;
+  background-position: top;
+  height: 70rem;
+  padding-top: 5rem;
+  padding-bottom: $padding-bottom-lg;
+  position: relative;
+
+  @include respond(tab-port) {
+    padding-bottom: $padding-bottom-md;
+    background-image: url("../../dist/resources/img/testimonials_background_small.jpg");
+  }
+
+  @include respond(phone) {
+    padding-bottom: $padding-bottom-sm;
+  }
+
+  &__testimonial {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 50rem;
+    padding: 3rem;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.5);
+
+    @include respond(phone) {
+      width: 35rem;
+    }
+
+    &.slideActive {
+      display: flex;
+    }
+
+    &.carouselFadeInFromLeft {
+      animation: carouselFadeInFromLeft 1s ease-out;
+      animation-fill-mode: backwards;
+      animation-delay: 0.5s;
+    }
+
+    &.carouselFadeInFromRight {
+      animation: carouselFadeInFromRight 1s ease-out;
+      animation-fill-mode: backwards;
+      animation-delay: 0.5s;
+    }
+
+    &.carouselFadeOutToLeft {
+      animation-name: carouselFadeOutToLeft;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      display: flex;
+    }
+
+    &.carouselFadeOutToRight {
+      animation-name: carouselFadeOutToRight;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      display: flex;
+    }
+  }
+
+  &__cite {
+    font-weight: bold;
+    color: $color-black;
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+  }
+
+  &__customer {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50rem;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__img {
+    &--1 {
+      display: block;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    &--2 {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &--3 {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__stars-box {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__icon {
+    color: $color-primary-dark;
+    font-size: 2.5rem;
+  }
+
+  &__quote {
+    font-style: italic;
+    line-height: 2.3;
+  }
+
+  &__button {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 48%;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    &::-moz-focus-inner {
+      border: 0;
+    }
+
+    &--right {
+      right: 20%;
+
+      @include respond(tab-port) {
+        right: 10%;
+      }
+
+      @include respond(phone) {
+        top: 85%;
+        right: 30%;
+      }
+    }
+
+    &--left {
+      left: 20%;
+
+      @include respond(tab-port) {
+        left: 10%;
+      }
+
+      @include respond(phone) {
+        top: 85%;
+        left: 30%;
+      }
+    }
+
+    & > .carousel-icon {
+      font-size: 6rem;
+      color: $color-primary-dark;
+    }
+  }
+}

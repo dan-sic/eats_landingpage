@@ -1,0 +1,32 @@
+.header {
+  @include grid-column-setup;
+
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.521), rgba(0, 0, 0, 0.507)),
+    url("../../dist/resources/img/hero_big.jpg");
+  background-size: cover;
+  background-position: center;
+
+  @include respond(tab-port) {
+    height: 80vh;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.521),
+        rgba(0, 0, 0, 0.507)
+      ),
+      url("../../dist/resources/img/hero_big_small.jpg");
+  }
+
+  @include respond(phone) {
+    height: 70vh;
+  }
+
+  &__hero-box {
+    grid-column: col-start 8 / full-end;
+    grid-row: 2;
+    align-self: center;
+
+    @include respond(tab-port) {
+      grid-column: main-start / col-end 6;
+    }
+  }
+}

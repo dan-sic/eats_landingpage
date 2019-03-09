@@ -1,0 +1,24 @@
+.u-margin-bottom-sm {
+  margin-bottom: 1.5rem !important;
+}
+.u-margin-bottom-md {
+  margin-bottom: 4rem !important;
+}
+
+.u-margin-top-sm {
+  margin-top: 2rem !important;
+}
+.u-margin-top-md {
+  margin-top: 4rem !important;
+}
+.u-margin-top-lg {
+  margin-top: 8rem !important;
+
+  @include respond(tab-port) {
+    margin-top: 5rem !important;
+  }
+}
+
+.u-center-text {
+  text-align: center;
+}

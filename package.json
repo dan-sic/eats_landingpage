@@ -1,0 +1,24 @@
+{
+  "name": "Eats",
+  "version": "1.0.0",
+  "description": "Restaurant website project for portfolio",
+  "main": "index.js",
+  "scripts": {
+    "watch:scss": "node-sass sass/main.scss dist/css/style.css -w",
+    "devserver": "live-server --browser=chrome --open=dist/index.html",
+    "start": "npm-run-all --parallel devserver watch:scss",
+    "compile:sass": "node-sass sass/main.scss dist/css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" dist/css/style.comp.css -o dist/css/style.prefix.css",
+    "compress:css": "node-sass dist/css/style.prefix.css dist/css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+  },
+  "author": "Daniel Sicinski",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^9.4.7",
+    "node-sass": "^4.11.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^6.1.1"
+  },
+  "dependencies": {}
+}

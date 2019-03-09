@@ -1,0 +1,129 @@
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  line-height: 1.7;
+  font-weight: 400;
+  color: black;
+}
+
+.heading-primary {
+  font-family: $font-heading;
+  font-size: 5rem;
+  color: $color-white;
+  font-weight: 700;
+  letter-spacing: 3px;
+
+  @include respond(phone) {
+    font-size: 3.5rem;
+  }
+
+  &--span {
+    color: $color-primary;
+    display: inline-block;
+    animation: fadeInFromRight 1s ease-out;
+  }
+}
+
+.heading-secondary {
+  font-family: $font-default;
+  font-weight: 300;
+  color: $color-white;
+  font-size: 2.5rem;
+
+  @include respond(phone) {
+    font-size: 2rem;
+  }
+
+  &--dark {
+    color: $color-grey-dark-3;
+    font-size: 2.3rem;
+  }
+
+  &--grey {
+    color: $color-grey-dark-2;
+    font-size: 2.3rem;
+  }
+}
+
+.heading-tertiary {
+  font-family: $font-heading;
+  font-size: 3rem;
+  color: $color-grey-dark-3;
+  font-weight: 400;
+
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
+
+  &--span {
+    color: $color-primary;
+  }
+
+  &--lighter {
+    color: $color-white;
+  }
+
+  &--after-center {
+    &::after {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 8rem;
+      background-color: $color-primary;
+      margin: 0 auto;
+      margin-top: 2rem;
+    }
+
+    &-dark {
+      &::after {
+        content: "";
+        display: block;
+        height: 2px;
+        width: 8rem;
+        background-color: $color-primary-dark;
+        margin: 0 auto;
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  &--after-left {
+    &::after {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 8rem;
+      background-color: $color-primary;
+      margin-top: 2rem;
+    }
+  }
+}
+
+.heading-fourth {
+  font-family: $font-heading;
+  font-size: 1.9rem;
+  color: $color-grey-dark-3;
+  font-weight: 700;
+
+  @include respond(phone) {
+    font-size: 1.7rem;
+  }
+}
+
+.paragraph {
+  color: $color-grey-dark-2;
+  font-size: $default-font-size;
+
+  &--bigger {
+    color: $color-grey-dark-3;
+    font-size: 1.9;
+  }
+
+  &--bigger-dark {
+    color: $color-grey-dark-3;
+    font-size: 2.3;
+  }
+
+  &--padding-top {
+    padding-top: $padding-top-sm;
+  }
+}

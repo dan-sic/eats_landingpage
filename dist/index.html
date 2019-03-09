@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Eats is your new premium restaurant. We know you're always busy. No time for cooking. So let us take care of that, we're really good at it, we promise!"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Roboto+Condensed:300,400"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Eats - landingpage</title>
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/resources/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/resources/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/resources/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/resources/favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/resources/favicons/safari-pinned-tab.svg"
+      color="#ff0000"
+    />
+    <link rel="shortcut icon" href="/resources/favicons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#ffc40d" />
+    <meta
+      name="msapplication-config"
+      content="/resources/favicons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffc40d" />
+  </head>
+  <body>
+    <header class="header" id="home">
+      <nav class="nav" id="js--nav">
+        <div class="nav__logo-box">
+          <a href="#"
+            ><img
+              data-src="./resources/img/Eats-Logo_colored.png"
+              alt="logo"
+              class="nav__logo lazyload"
+          /></a>
+        </div>
+        <button class="nav__button js--btn-nav">
+          <span class="nav__icon js--nav-icon">&nbsp;</span>
+        </button>
+        <ul class="nav__links js--nav-list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link js--nav-link" data-scroll>Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link js--nav-link" data-scroll
+              >About</a
+            >
+          </li>
+          <li class="nav__item">
+            <a href="#menu" class="nav__link js--nav-link" data-scroll>Menu</a>
+          </li>
+          <li class="nav__item">
+            <a href="#gallery" class="nav__link js--nav-link" data-scroll
+              >Gallery</a
+            >
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link js--nav-link" data-scroll
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="header__hero-box">
+        <h1 class="heading-primary">
+          Discover the flavours of life with
+          <span class="heading-primary--span">Eats</span>
+        </h1>
+        <h2 class="heading-secondary">The most delicious food in the world</h2>
+        <button class="btn u-margin-top-sm js--modal-open">Reservation</button>
+      </div>
+    </header>
+    <main>
+      <section class="about" id="about">
+        <div class="about__text-box">
+          <h3 class="heading-tertiary heading-tertiary--after-left">
+            Welcome to <span class="heading-tertiary--span">Eats!</span>
+          </h3>
+          <p class="paragraph paragraph--padding-top">
+            Our restaurant provides the best food. Meet our team of expert
+            chefs, who deliver the ultimate cousine experience.
+          </p>
+          <p class="paragraph paragraph--padding-top">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+            recusandae ullam, harum, totam commodi pariatur quae eius dolore
+            neque laudantium sint consequuntur amet? Possimus saepe, molestiae
+            omnis nobis eum culpa!
+          </p>
+          <a href="#" class="btn btn--full u-margin-top-sm">More about us</a>
+        </div>
+        <div class="about__img-box">
+          <figure>
+            <img
+              data-src="./resources/img/chef_section_2.jpg"
+              alt="Chef Image"
+              class="about__img lazyload"
+              id="js--aboutImg"
+            />
+          </figure>
+        </div>
+      </section>
+      <section class="menu u-margin-top-lg" id="menu">
+        <h3
+          class="heading-tertiary heading-tertiary--after-center u-margin-bottom-md menu__heading"
+        >
+          Try out our specialties
+        </h3>
+        <div class="menu__showcase">
+          <figure class="menu__card" id="js--menuCard-1">
+            <div class="menu__img-container">
+              <img
+                data-src="./resources/img/meal_1.jpg"
+                alt="Meal 1"
+                class="menu__img lazyload"
+              />
+            </div>
+            <figcaption class="menu__caption">
+              <div class="menu__tag">
+                <h4 class="heading-fourth">Pincholo Rice</h4>
+                <span class="menu__price">$12.90</span>
+              </div>
+              <p class="menu__description paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                iusto vero labore quisquam dolor vitae.
+              </p>
+            </figcaption>
+          </figure>
+          <figure class="menu__card" id="js--menuCard-2">
+            <div class="menu__img-container">
+              <img
+                data-src="./resources/img/meal_2.jpg"
+                alt="Meal 2"
+                class="menu__img lazyload"
+              />
+            </div>
+            <figcaption class="menu__caption">
+              <div class="menu__tag">
+                <h4 class="heading-fourth">Alocha Oysters</h4>
+                <span class="menu__price">$8.90</span>
+              </div>
+              <p class="menu__description paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                iusto vero labore quisquam dolor vitae.
+              </p>
+            </figcaption>
+          </figure>
+          <figure class="menu__card" id="js--menuCard-3">
+            <div class="menu__img-container">
+              <img
+                data-src="./resources/img/meal_3.jpg"
+                alt="Meal 3"
+                class="menu__img lazyload"
+              />
+            </div>
+            <figcaption class="menu__caption">
+              <div class="menu__tag">
+                <h4 class="heading-fourth">Cippanno Sql</h4>
+                <span class="menu__price">$6.50</span>
+              </div>
+              <p class="menu__description paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                iusto vero labore quisquam dolor vitae.
+              </p>
+            </figcaption>
+          </figure>
+          <figure class="menu__card" id="js--menuCard-4">
+            <div class="menu__img-container">
+              <img
+                data-src="./resources/img/meal_4.jpg"
+                alt="Meal 4"
+                class="menu__img lazyload"
+              />
+            </div>
+            <figcaption class="menu__caption">
+              <div class="menu__tag">
+                <h4 class="heading-fourth">Porco Rosso</h4>
+                <span class="menu__price">$10.50</span>
+              </div>
+              <p class="menu__description paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                iusto vero labore quisquam dolor vitae.
+              </p>
+            </figcaption>
+          </figure>
+          <figure class="menu__card" id="js--menuCard-5">
+            <div class="menu__img-container">
+              <img
+                data-src="./resources/img/meal_5.jpg"
+                alt="Meal 5"
+                class="menu__img lazyload"
+              />
+            </div>
+            <figcaption class="menu__caption">
+              <div class="menu__tag">
+                <h4 class="heading-fourth">Pulpetin liten</h4>
+                <span class="menu__price">$6.90</span>
+              </div>
+              <p class="menu__description paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                iusto vero labore quisquam dolor vitae.
+              </p>
+            </figcaption>
+          </figure>
+          <figure class="menu__card" id="js--menuCard-6">
+            <div class="menu__img-container">
+              <img
+                data-src="./resources/img/meal_6.jpg"
+                alt="Meal 6"
+                class="menu__img lazyload"
+              />
+            </div>
+            <figcaption class="menu__caption">
+              <div class="menu__tag">
+                <h4 class="heading-fourth">Crabbi di tutti</h4>
+                <span class="menu__price">$11.90</span>
+              </div>
+              <p class="menu__description paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                iusto vero labore quisquam dolor vitae.
+              </p>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+      <div class="breaker">
+        <div class="bg-video">
+          <video class="bg-video__content" autoplay muted loop>
+            <source
+              src="./resources/img/food_cooking_vid.mp4"
+              type="video/mp4"
+            />
+            Video is not supported
+          </video>
+        </div>
+        <div class="breaker__display">
+          <h3 class="heading-tertiary heading-tertiary--lighter">
+            Natural Ingridients and Tasty Food
+          </h3>
+          <h4 class="heading-secondary">Come and taste it yourself</h4>
+          <a href="#home" class="btn u-margin-top-sm js--modal-open" data-scroll
+            >Reservation</a
+          >
+        </div>
+      </div>
+      <section class="features">
+        <div class="features__head">
+          <h3
+            class="heading-tertiary heading-tertiary--after-center u-margin-bottom-sm u-center-text"
+          >
+            Great atmosphere, and even better food
+          </h3>
+          <p class="paragraph paragraph--bigger paragraph--padding-top">
+            Hello, we're Eats, your new premium restaurant. We know you're
+            always busy. No time for cooking. So let us take care of that, we're
+            really good at it, we promise!
+          </p>
+        </div>
+        <div class="features__showcase">
+          <div class="features__feature">
+            <ion-icon name="pizza" class="features__icon"></ion-icon>
+            <h4 class="heading-secondary heading-secondary--dark">
+              Delicious Food
+            </h4>
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+              mollitia libero aut nobis praesentium. Nisi suscipit cumque quia.
+              Maxime eveniet non optio architecto corrupti, sed illo pariatur
+              dolores cum quidem.
+            </p>
+          </div>
+          <div class="features__feature">
+            <ion-icon name="person-add" class="features__icon"></ion-icon>
+            <h4 class="heading-secondary heading-secondary--dark">
+              Proffesional Service
+            </h4>
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+              mollitia libero aut nobis praesentium. Nisi suscipit cumque quia.
+              Maxime eveniet non optio architecto corrupti, sed illo pariatur
+              dolores cum quidem.
+            </p>
+          </div>
+          <div class="features__feature">
+            <ion-icon name="sync" class="features__icon"></ion-icon>
+            <h4 class="heading-secondary heading-secondary--dark">
+              100% Organic
+            </h4>
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+              mollitia libero aut nobis praesentium. Nisi suscipit cumque quia.
+              Maxime eveniet non optio architecto corrupti, sed illo pariatur
+              dolores cum quidem.
+            </p>
+          </div>
+          <div class="features__feature">
+            <ion-icon name="happy" class="features__icon"></ion-icon>
+            <h4 class="heading-secondary heading-secondary--dark">
+              Unforgettable Atmosphere
+            </h4>
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+              mollitia libero aut nobis praesentium. Nisi suscipit cumque quia.
+              Maxime eveniet non optio architecto corrupti, sed illo pariatur
+              dolores cum quidem.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="gallery" id="gallery">
+        <fugire class="gallery__item--4">
+          <img
+            data-src="./resources/img/restaurant_4.jpg"
+            alt="restaurant image 4"
+            class="gallery__img lazyload"
+          />
+        </fugire>
+        <fugire class="gallery__item--11">
+          <img
+            data-src="./resources/img/restaurant_11.jpg"
+            alt="restaurant image 11"
+            class="gallery__img lazyload"
+          />
+        </fugire>
+        <fugire class="gallery__item--9">
+          <img
+            data-src="./resources/img/restaurant_9.jpg"
+            alt="restaurant image 9"
+            class="gallery__img lazyload"
+          />
+        </fugire>
+        <fugire class="gallery__item--2">
+          <img
+            data-src="./resources/img/restaurant_2.jpg"
+            alt="restaurant image 2"
+            class="gallery__img lazyload"
+          />
+        </fugire>
+        <fugire class="gallery__item--0">
+          <img
+            data-src="./resources/img/restaurant_0.jpg"
+            alt="restaurant image 0"
+            class="gallery__img lazyload"
+          />
+        </fugire>
+        <fugire class="gallery__item--5">
+          <img
+            data-src="./resources/img/restaurant_5.jpg"
+            alt="restaurant image 5"
+            class="gallery__img lazyload"
+          />
+        </fugire>
+        <fugire class="gallery__item--7">
+          <img
+            data-src="./resources/img/restaurant_7.jpg"
+            alt="restaurant image 7"
+            class="gallery__img lazyload"
+          />
+        </fugire>
+        <fugire class="gallery__item--8">
+          <img
+            data-src="./resources/img/restaurant_8.jpg"
+            alt="restaurant image 8"
+            class="gallery__img lazyload"
+          />
+        </fugire>
+        <fugire class="gallery__item--6">
+          <img
+            data-src="./resources/img/restaurant_6.jpg"
+            alt="restaurant image 6"
+            class="gallery__img lazyload"
+          />
+        </fugire>
+        <fugire class="gallery__item--3">
+          <img
+            data-src="./resources/img/restaurant_3.jpg"
+            alt="restaurant image 3"
+            class="gallery__img lazyload"
+          />
+        </fugire>
+        <fugire class="gallery__item--1">
+          <img
+            data-src="./resources/img/restaurant_1.jpg"
+            alt="restaurant image 1"
+            class="gallery__img lazyload"
+          />
+        </fugire>
+      </section>
+      <section class="testimonials">
+        <h3
+          class="heading-tertiary heading-tertiary--after-center-dark u-margin-bottom-md u-center-text"
+        >
+          What our customers say about us
+        </h3>
+
+        <div class="testimonials__testimonial slideActive" id="js--slide-1">
+          <div class="testimonials__customer">
+            <img
+              data-src="./resources/img/customer_1.jpg"
+              alt="Customer 1"
+              class="testimonials__img--1 lazyload"
+            />
+          </div>
+          <cite class="testimonials__cite">Stacy Green</cite>
+          <div class="testimonials__stars-box">
+            <ion-icon name="star" class="testimonials__icon"></ion-icon>
+            <ion-icon name="star" class="testimonials__icon"></ion-icon>
+            <ion-icon name="star" class="testimonials__icon"></ion-icon>
+            <ion-icon name="star" class="testimonials__icon"></ion-icon>
+            <ion-icon name="star-half" class="testimonials__icon"></ion-icon>
+          </div>
+          <blockquote
+            class="paragraph testimonials__quote paragraph--bigger-dark"
+          >
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis
+            delectus suscipit ratione at et earum molestias consequuntur, modi
+            natus quidem minima, architecto nihil, reiciendis dolorum aperiam
+            asperiores quam autem optio."
+          </blockquote>
+        </div>
+        <div class="testimonials__testimonial" id="js--slide-2">
+          <div class="testimonials__customer">
+            <img
+              data-src="./resources/img/customer_2.jpg"
+              alt="Customer 2"
+              class="testimonials__img--2 lazyload"
+            />
+          </div>
+          <cite class="testimonials__cite">Nick Jenkins</cite>
+          <div class="testimonials__stars-box">
+            <ion-icon name="star" class="testimonials__icon"></ion-icon>
+            <ion-icon name="star" class="testimonials__icon"></ion-icon>
+            <ion-icon name="star" class="testimonials__icon"></ion-icon>
+            <ion-icon name="star" class="testimonials__icon"></ion-icon>
+            <ion-icon name="star-outline" class="testimonials__icon"></ion-icon>
+          </div>
+          <blockquote
+            class="paragraph testimonials__quote paragraph--bigger-dark"
+          >
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis
+            delectus suscipit ratione at et earum molestias consequuntur, modi
+            natus quidem minima, architecto nihil, reiciendis dolorum aperiam
+            asperiores quam autem optio."
+          </blockquote>
+        </div>
+        <div class="testimonials__testimonial" id="js--slide-3">
+          <div class="testimonials__customer">
+            <img
+              data-src="./resources/img/customer_3.jpg"
+              alt="Customer 3"
+              class="testimonials__img--3 lazyload"
+            />
+          </div>
+          <cite class="testimonials__cite">Joshua Fluke</cite>
+          <div class="testimonials__stars-box">
+            <ion-icon name="star" class="testimonials__icon"></ion-icon>
+            <ion-icon name="star" class="testimonials__icon"></ion-icon>
+            <ion-icon name="star" class="testimonials__icon"></ion-icon>
+            <ion-icon name="star" class="testimonials__icon"></ion-icon>
+            <ion-icon name="star" class="testimonials__icon"></ion-icon>
+          </div>
+          <blockquote
+            class="paragraph testimonials__quote paragraph--bigger-dark"
+          >
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis
+            delectus suscipit ratione at et earum molestias consequuntur, modi
+            natus quidem minima, architecto nihil, reiciendis dolorum aperiam
+            asperiores quam autem optio."
+          </blockquote>
+        </div>
+        <button
+          class="testimonials__button testimonials__button--right"
+          id="js--carousel-btn-right"
+        >
+          <ion-icon name="arrow-dropright" class="carousel-icon"></ion-icon>
+        </button>
+        <button
+          class="testimonials__button testimonials__button--left"
+          id="js--carousel-btn-left"
+        >
+          <ion-icon name="arrow-dropleft" class="carousel-icon"></ion-icon>
+        </button>
+      </section>
+      <section class="contact" id="contact">
+        <div class="contact__heading  u-center-text">
+          <h3
+            class="heading-tertiary heading-tertiary--after-center u-margin-bottom-md"
+          >
+            Get in Touch
+          </h3>
+          <p class="paragraph--bigger">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+            vel, numquam qui accusantium dolorum neque?
+          </p>
+        </div>
+        <div class="contact__card">
+          <form class="form contact__form">
+            <input
+              type="text"
+              class="form__input contact__input"
+              placeholder="Name"
+            />
+            <input
+              type="email"
+              class="form__input contact__input"
+              placeholder="Email"
+            />
+            <textarea
+              cols="30"
+              rows="10"
+              class="form__input contact__input"
+              placeholder="Write us a message"
+            ></textarea>
+            <input
+              type="submit"
+              class="form__submit btn btn--full u-margin-top-sm contact__submit"
+              value="Send message"
+            />
+          </form>
+          <div class="contact__side">
+            <img
+              data-src="./resources/img/restaurant_12.jpg"
+              alt="Restaurant Image"
+              class="contact__img lazyload"
+            />
+            <address class="contact__address paragraph">
+              Address:<br />
+              12 Street, Kentucky Michigan<br />
+              3000 USA<br />
+              <br />
+              Phone:<br />
+              90 987 65 44<br />
+              <br />
+              Email:<br />
+              <a href="mailto:contact@eats.com">contact@eats.com</a>
+            </address>
+          </div>
+        </div>
+        <div class="map"></div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__main">
+        <div class="footer__opening-hours">
+          <h4
+            class="heading-secondary heading-secondary--grey u-margin-bottom-sm"
+          >
+            Opening Hours
+          </h4>
+          <ul class="footer__hours-list">
+            <li class="footer__hours-item">
+              Monday-Friday <span>09.00 am-11.00 pm</span>
+            </li>
+            <li class="footer__hours-item">
+              Saturday <span>09.00 am-11.00 pm</span>
+            </li>
+            <li class="footer__hours-item">
+              Sunday <span>09.00 am-11.00 pm</span>
+            </li>
+          </ul>
+        </div>
+        <div class="newsletter">
+          <h4
+            class="heading-secondary heading-secondary--grey u-margin-bottom-sm"
+          >
+            Newsletter
+          </h4>
+          <p class="paragraph">
+            We value your privacy. We will not share your data and send only
+            offers that may interest you.
+          </p>
+          <form class="newsletter__form">
+            <input
+              type="email"
+              placeholder="Your email address"
+              class="newsletter__input"
+            />
+            <input type="submit" class="newsletter__btn" value="&rarr;" />
+          </form>
+        </div>
+        <div class="footer__links">
+          <h4
+            class="heading-secondary heading-secondary--grey u-margin-bottom-sm u-center-text"
+          >
+            Useful links
+          </h4>
+          <nav class="footer__nav">
+            <a href="#home" class="footer__link">Home</a>
+            <a href="#about" class="footer__link">About</a>
+            <a href="#menu" class="footer__link">Menu</a>
+            <a href="#gallery" class="footer__link">Gallery</a>
+            <a href="#contact" class="footer__link">Contact</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer__secondary">
+        <div class="social-links">
+          <a href="#" class="social-links__link">
+            <ion-icon
+              name="logo-facebook"
+              class="social-links__icon social-links__icon--fb"
+            ></ion-icon>
+          </a>
+          <a href="#" class="social-links__link">
+            <ion-icon
+              name="logo-instagram"
+              class="social-links__icon social-links__icon--inst"
+            ></ion-icon>
+          </a>
+          <a href="#" class="social-links__link">
+            <ion-icon
+              name="logo-googleplus"
+              class="social-links__icon social-links__icon--google"
+            ></ion-icon>
+          </a>
+        </div>
+        <p class="paragraph">
+          Copyright &copy; 2019. Made by Daniel Sicinski
+        </p>
+      </div>
+    </footer>
+    <div class="modal-overlay"></div>
+    <article class="modal">
+      <img
+        data-src="./resources/img/restaurant_11.jpg"
+        alt="Restaurant image"
+        class="modal__img lazyload"
+      />
+      <div class="modal__close js--modal-close">
+        Close <ion-icon name="close" class="modal__icon"></ion-icon>
+      </div>
+      <h3
+        class="heading-tertiary heading-tertiary--after-left u-margin-bottom-sm u-margin-top-sm modal__heading"
+      >
+        Reserve a table
+      </h3>
+      <form class="form modal__form">
+        <div class="modal__form-group--first-name">
+          <label for="first_name" class="form__label">First Name</label>
+          <input type="text" id="first_name" class="form__input" />
+        </div>
+        <div class="modal__form-group--last-name">
+          <label for="last_name" class="form__label">Last Name</label>
+          <input type="text" id="last_name" class="form__input" />
+        </div>
+        <div class="modal__form-group--email">
+          <label for="email" class="form__label">Email</label>
+          <input type="email" id="email" class="form__input" />
+        </div>
+        <div class="modal__form-group--people-number">
+          <label for="people_number" class="form__label">How Many People</label>
+          <select name="people_number" id="people_number" class="form__input">
+            <option value="1_person">1 Person</option>
+            <option value="2_persons">2 Persons</option>
+            <option value="3_persons">3 Persons</option>
+            <option value="4+_persons">4+ Persons</option>
+          </select>
+        </div>
+        <div class="modal__form-group--phone">
+          <label for="phone" class="form__label">Phone</label>
+          <input type="text" id="phone" class="form__input" />
+        </div>
+        <div class="modal__form-group--date">
+          <label for="date" class="form__label">Date</label>
+          <input type="text" id="date" class="form__input" />
+        </div>
+        <div class="modal__form-group--time">
+          <label for="time" class="form__label">Time</label>
+          <input type="text" id="time" class="form__input" />
+        </div>
+        <div class="modal__form-group--message">
+          <label for="message" class="form__label">Message</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            class="form__input-message form__input"
+          ></textarea>
+        </div>
+        <input
+          type="submit"
+          class="form__submit btn btn--full u-margin-top-sm modal__submit"
+          value="Reserve now"
+        />
+      </form>
+    </article>
+    <script src="js/lazysizes.min.js" async=""></script>
+    <script src="js/smooth-scroll.polyfills.min.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCidnDEbeIy3kZOtyr0777CGRmPA7Gz2Kk&callback=initMap"
+      async
+      defer
+    ></script>
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
